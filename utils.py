@@ -3,6 +3,8 @@ from collections import Counter
 
 
 class DbConnect:
+    """Класс для работы с SQlite.
+    """
     def __init__(self, path):
         self.con = sqlite3.connect(path)
         self.cur = self.con.cursor()
